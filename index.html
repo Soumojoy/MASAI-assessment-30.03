@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+<nav>
+<ul class="ul-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#client">Differneces</a></li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#quiz">Quiz</a></li>
+</ul>
+
+</nav>
+
+    </header>
+    <hr>
+    <section>
+        <div class="hero">
+            <h1> The Client-Server Model:</h1>
+            <ul class="ul-hero">
+                <li>
+                    <div  class="hero-text">
+                        <h3>Client</h3>
+                        <p>The client initiates the communication by sending a request to the server. In web development, this is typically a web browser, but it can also be a bot or scraper.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="hero-text">
+                        <h3>Server</h3>
+                        <p>The server receives the request from the client, processes it, and then sends back a response.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="hero-text">
+                        <h3>Request-Response Pattern:</h3>
+                        <p>The communication happens through a request-response cycle, where the client sends a request, and the server responds with the requested data. </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="hero2">
+            <h2>Client and server communication</h2>
+            <p>The client sends a request, and the server returns a response. This exchange of messages is an example of inter-process communication. To communicate, the computers must have a common language, and they must follow rules so that both the client and the server know what to expect.</p>
+        </div>
+    </section>
+    <article>
+        <h2>Journey of a Web request</h2>
+        
+        <p>In the vast expanse of the internet, every click, every search, and every interaction we make through our browsers initiates a journey — a complex journey that spans across various technologies, protocols, and infrastructures before arriving at its destination and back. This article is a deep dive into the odyssey of a web request from the moment you hit enter on your browser to when it reaches the systems and returns with the information or service you sought. Grab your digital explorer gear, we’re tracing the path of a web request using debuggers and dissecting the components it encounters along the way.</p>
+   <img class="img" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*k9e4mTb-I_Xq2e4hmYu6WQ.png" alt="image">
+   
+  <h3>The Initial Leap: From Browser to the Internet </h3> 
+  <p> When you type a URL into your browser and press enter, you’re sending out a web request. This request is your digital envoy, tasked with fetching information from a server located possibly thousands of miles away. But how does this request know where to go and what to fetch? Here begins our journey:
+</p>
+
+<ul class="article-item">
+    <li>
+        <p>
+           
+            Arrival and Authentication: The server first verifies if the request is valid and if the requester has the necessary permissions to access the requested resource.
+   </p>
+        </li>
+    <li>
+        <p>Processing: Depending on the nature of the request, it might be processed by various applications and databases within the system. This could involve fetching data, performing computations, or any number of other operations.
+           </p>
+    </li>
+    <li>
+        <p>
+            Response Formation: Once the request has been processed, the server packages the result into a response. This response is then sent back across the internet, retracing some of the steps the request took but in reverse, until it reaches your browser.
+        </p>
+    </li>
+    <li>
+        <p>
+            Rendering: Your browser receives the response and renders it for you to see. If it’s a web page, for instance, the browser interprets the HTML, CSS, and JavaScript to display the page as intended by its designers.
+        </p>
+    </li>
+   
+   
+</ul>
+
+<ol class="article-item">
+    <li>
+        <p>
+            DNS Lookup: The very first step is for the browser to understand the address you’ve given it. The Domain Name System (DNS) acts as the internet’s phone book. It translates human-friendly web addresses (like www.example.com) into computer-friendly IP addresses (like 192.0.2.1). This is crucial because, in the vast network of the internet, resources are located by their IP addresses.
+        </p>
+    </li>
+    <li>
+        <p>IP Routing: With the IP address resolved, your request is now ready to travel. But it doesn’t go straight to the destination. Instead, it hops across multiple routers, each time getting closer to the target server. This journey is guided by Internet Protocol (IP) routing, where each router makes a decision on how to forward the request based on the destination IP.
+           </p>
+    </li>
+    <li>
+        <p>
+            Edge Caching: Before your request reaches its final destination, it might hit an edge server. Edge caching is a technique where frequently requested content is stored on servers that are geographically closer to the user. This can significantly reduce load times and bandwidth usage. If the requested data is available in the cache, it’s returned to the user immediately, without ever reaching the target server.
+        </p>
+    </li>
+    <li style="list-style: none;">
+        <img class="img"  src="http://miro.medium.com/v2/resize:fit:828/format:webp/0*qahIQ5Rug4BX2nJX" alt="image">
+    </li>
+</ol>
+
+<h3 id="client">Static vs Dynamic</h3>
+<table border="1">
+    <tr>
+        <th style="background-color: blue;">Static</th>
+        <th style="background-color: blue;">dynamic</th>
+    </tr>
+    <tr>
+        <td style="padding: 10px;">a website that has fixed content that doesn't change for each user</td>
+        <td style="padding: 10px;">a website that changes its content based on the user's actions, preferences, and other variables</td>
+        
+    </tr>
+</table>
+<br>
+
+<h3>Client vs Server</h3>
+<table border="1">
+    <tr>
+        <th style="background-color: blue;">Client</th>
+        <th style="background-color: blue;">server</th>
+    </tr>
+    <tr>
+        <td style="padding: 10px;"> a client requests services or resources from a server, which then fulfills the request</td>
+        <td style="padding: 10px;">a computer or system that provides resources, data, services, or programs to other computers (clients) over a network, acting as a central host for files and services</td>
+        
+    </tr>
+</table>
+
+<h3>Data centers</h3>
+<img class="img" width="800"  height="300" src="https://www.datacenterjournal.com/mapshots/region/india.jpeg" alt="image">
+
+
+
+
+
+
+
+
+
+
+
+
+<h3 id="summary">Summary </h3> 
+<p > The journey of a web request is a testament to the marvel of modern technology and the intricate web of systems that power our digital world. From the simplicity of typing a URL into a browser to the complexity of the internet’s backbone technologies and the servers that process and respond to requests, each step is crucial. Understanding these processes not only satisfies curiosity but also empowers us with knowledge on optimizing and troubleshooting the systems we rely on every day.
+
+    As we continue to push the boundaries of technology and connectivity, the journey of a web request remains a fundamental process, emblematic of our interconnected world. So, the next time you click a link or search the web, remember the incredible journey that request embarks on to bring the digital world to your fingertips.</p>
+
+<div class="video">
+    <iframe class="img"  width="360" height="215" src="https://www.youtube.com/embed/mViXPzoB4Qc?si=pD_6RXVG8kjgGm6H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</article>
+<aside>
+    <!-- <img height="300"  width="300" src="https://static.vecteezy.com/system/resources/previews/006/662/128/non_2x/quick-tips-speech-bubble-with-bulb-icon-interesting-facts-concept-for-graphic-design-logo-website-social-media-mobile-app-ui-illustration-free-vector.jpg">
+    <ul class="tips-item">
+        <li>
+            <h3>tips1</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquam et eveniet labore delectus minus praesentium, deleniti voluptates maiores similique ipsum id sequi dolorem commodi soluta numquam sunt libero dolorum?
+            </span>
+        </li>
+        <li>
+            <h3>tips2</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquam et eveniet labore delectus minus praesentium, deleniti voluptates maiores similique ipsum id sequi dolorem commodi soluta numquam sunt libero dolorum?
+            </span>
+        </li>
+        <li>
+            <h3>tips3</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquam et eveniet labore delectus minus praesentium, deleniti voluptates maiores similique ipsum id sequi dolorem commodi soluta numquam sunt libero dolorum?
+            </span>
+        </li>
+    </ul>
+    <ul class="tips-item">
+        <li>
+            <h3>tips4</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquam et eveniet labore delectus minus praesentium, deleniti voluptates maiores similique ipsum id sequi dolorem commodi soluta numquam sunt libero dolorum?
+            </span>
+        </li>
+        <li>
+            <h3>tips5</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquam et eveniet labore delectus minus praesentium, deleniti voluptates maiores similique ipsum id sequi dolorem commodi soluta numquam sunt libero dolorum?
+            </span>
+        </li>
+        <li>
+            <h3>tips6</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquam et eveniet labore delectus minus praesentium, deleniti voluptates maiores similique ipsum id sequi dolorem commodi soluta numquam sunt libero dolorum?
+            </span>
+        </li>
+    </ul> -->
+   <div class="tips">
+    <img height="300"  width="300" src="https://static.vecteezy.com/system/resources/previews/006/662/128/non_2x/quick-tips-speech-bubble-with-bulb-icon-interesting-facts-concept-for-graphic-design-logo-website-social-media-mobile-app-ui-illustration-free-vector.jpg">
+    <ul class="tips-item">
+        <li>
+            <h3>tips1</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquam et eveniet labore delectus minus praesentium, deleniti voluptates maiores similique ipsum id sequi dolorem commodi soluta numquam sunt libero dolorum?
+            </span>
+        </li>
+        <li>
+            <h3>tips2</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquam et eveniet labore delectus minus praesentium, deleniti voluptates maiores similique ipsum id sequi dolorem commodi soluta numquam sunt libero dolorum?
+            </span>
+        </li>
+        <li>
+            <h3>tips3</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquam et eveniet labore delectus minus praesentium, deleniti voluptates maiores similique ipsum id sequi dolorem commodi soluta numquam sunt libero dolorum?
+            </span>
+        </li>
+    </ul>
+    <ul class="tips-item">
+        <li>
+            <h3>tips4</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquam et eveniet labore delectus minus praesentium, deleniti voluptates maiores similique ipsum id sequi dolorem commodi soluta numquam sunt libero dolorum?
+            </span>
+        </li>
+        <li>
+            <h3>tips5</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquam et eveniet labore delectus minus praesentium, deleniti voluptates maiores similique ipsum id sequi dolorem commodi soluta numquam sunt libero dolorum?
+            </span>
+        </li>
+        <li>
+            <h3>tips6</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquam et eveniet labore delectus minus praesentium, deleniti voluptates maiores similique ipsum id sequi dolorem commodi soluta numquam sunt libero dolorum?
+            </span>
+        </li>
+    </ul>
+   </div>
+    <br>
+</aside>
+
+<aside id="quiz" >
+
+    <form action=" submit" style="padding: 40px; background-color: white; color: black; ">
+        <h3>review form</h3>
+        <label for="name">Name:</label>
+        <input placeholder="enter your name" type="text" required>
+        <p></p>
+        <label for="name">Email:</label>
+        <input placeholder="enter mail id" type="email" required>
+        <br>
+        <p>1.what is client</p>
+        <input type="radio" id="html" name="q1" value="who request" required>
+        <label for="who request">Who requests</label><br>
+    
+        <input type="radio" id="html"  name="q1" value="who reponses">
+        <label for="who reponses">who reponses</label><br>
+    
+        <p>2.do you like this article</p>
+        <input type="radio" name="q2" id="html" value="yes">
+        <label for="yes">yes</label><br>
+    
+        <input type="radio" name="q1" id="html" value="no">
+        <label for="no">no</label><br><br>
+        <button style="background-color: black; color: white; padding: 10px 20px;" type="submit">Submit</button>
+    
+    </form>
+</aside>
+<hr>
+
+<footer>
+    <ul class="footer">
+        <li>
+            <a href="https://medium.com/@rukhsarkhan4198/demystifying-the-journey-of-a-web-request-from-browser-to-server-and-beyond-f8a706a847c5">credits: Soumo</a>
+        </li>
+        <li>
+            
+            <a href="https://medium.com/@rukhsarkhan4198/demystifying-the-journey-of-a-web-request-from-browser-to-server-and-beyond-f8a706a847c5">Learn more</a>
+        </li>
+        <li>
+           
+            <a href="https://medium.com/@rukhsarkhan4198/demystifying-the-journey-of-a-web-request-from-browser-to-server-and-beyond-f8a706a847c5">View</a>
+        </li>
+    </ul>
+    <ul class="footer">
+        follow our socials
+        <li>
+            <img width="48" height="48" src="https://img.icons8.com/color/48/facebook.png" alt="facebook"/>
+        </li>
+        <li>
+            
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/youtube-squared.png" alt="youtube-squared"/>
+        <li>
+           
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+        </li>
+    </ul>
+
+</footer>
+</body>
+</html>
